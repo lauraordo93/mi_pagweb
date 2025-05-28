@@ -28,8 +28,10 @@ if ($result && $result->num_rows > 0) {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        width: 100%;
-        min-height: 115vh;
+         background-attachment: fixed;
+         /*quitando esto la imagen baja sola*/  
+        /* width: 100%;
+        min-height: 115vh; */
         justify-content: center;
     }
 

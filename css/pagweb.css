@@ -55,7 +55,9 @@ nav {
     z-index: 99;
 }
 
-/* Contenedor centrado */
+
+
+/* Contenedor centrado 
 .nav-container {
     max-width: 100%;
     margin: 0 auto;
@@ -67,7 +69,7 @@ nav {
     padding: 0;
 }
 
-/* Enlaces */
+/* Enlaces 
 .nav-container a {
     display: inline-block;
     margin: 1.5rem 1.5rem;
@@ -79,14 +81,14 @@ nav {
     font-size: 0.9rem;
     padding: 0.4rem 1.2rem;
     transition: background-color 0.3s, color 0.3s;
-    /* white-space: nowrap; */
+    /* white-space: nowrap; 
 }
 
 nav a {
     padding: 10px 15px;
-    /* o el valor que mejor se adapte */
+    /* o el valor que mejor se adapte 
     display: inline-block;
-    /* para que el padding afecte al área */
+    /* para que el padding afecte al área 
 }
 
 
@@ -96,16 +98,121 @@ nav a {
 }
 
 
-/*--- SOBREMI --- */
+*/
+nav {
+    width: 100%;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    margin: 0;
+    position: relative;
+    z-index: 99;
+    border-bottom: 1px solid #ccc;
+}
 
+
+/* Contenedor del menú */
+.nav-container {
+    background-color: #000;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: rem;
+    position: relative;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex: 1; /* ocupa el máximo espacio posible */
+}
+/* Enlaces */
+.nav-container a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    transition: color 0.3s;
+}
+
+.nav-container a:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background-color: #ccc;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    top: 2px;
+}
+
+
+/* Separador con ::after, excepto en el último */
+.nav-container a {
+
+    color: white;
+    border-right: 1px solid #ccc;
+    padding-right: 1rem;
+    margin-right: 1rem;
+}
+
+.nav-container a:last-child {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+/* Hover en negro */
+.nav-container a:hover {
+    color: #f11010;
+}
+/* Foto pequeña a la derecha */
+/* Imagen */
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-container {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-container.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Sin separadores en móvil */
+    .nav-container a:not(:last-child)::after {
+        content: "";
+    }
+}
+
+/*--- SOBREMI --- */
 .intro {
+    position: absolute;
+    /*Para mover el titulo hacia arriba con top*/
+    top: 10%;
+    right: 5%;
+    max-width: 600px;
     color: white;
     padding: 2rem;
-    position: relative;
-    top: -65px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
     text-align: justify;
+
+    border-radius: 8px;
+    z-index: 2;
+    /* encima de logo */
 }
 
 /* Botón ver más */

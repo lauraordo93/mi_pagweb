@@ -8,7 +8,7 @@
     <!--Problemas con el link-->
     <link rel="stylesheet" href="../css/pagweb.css?v=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
- 
+
 </head>
 
 
@@ -16,22 +16,30 @@
 <body>
 
     <header id="inicio">
-        
-        <nav class="nav-container">
-            <?php include('../componentes/menunav.php'); ?>
 
+        <nav class="nav-container">
+           
+                <?php include('../componentes/menunav.php'); ?>
+          
+            <!-- <a href="https://es.yamaha.com/es/artists/c/carlos_ordonez_de%20arce.html" class="foto-link">
+                <img src="../img/sax_sinfondo.jpg" alt="Artist by Yahama" />
+                <span class="titulo">Artist by Yahama yue</span>
+            </a> -->
+            <!-- <button class="menu-toggle" onclick="toggleMenu()">☰</button> -->
         </nav>
 
-            <div class="logo">
-                <?php include('../componentes/logo.php');
-                ; ?>
-            </div>
-            <div class="intro">
-                
-                <?php include('../componentes/sobremi.php'); ?>
-          
-            </div>
-   
+        <div class="logo">
+            <?php include('../componentes/logo.php');
+            ; ?>
+
+        </div>
+        <div class="intro">
+
+            <?php include('../componentes/sobremi.php'); ?>
+
+        </div>
+
+
     </header>
 
 
@@ -64,10 +72,10 @@
     <footer>
         <?php include_once('../componentes/redes.php'); ?>
         <div class="pie">
-        <p> &copy; 2025 Todos los derechos reservados  <a href="#inicio">Volver al inicio</a></p>
-     </div>
+            <p> &copy; 2025 Todos los derechos reservados <a href="#inicio">Volver al inicio</a></p>
+        </div>
     </footer>
-    
+
 </body>
 
 </html>
