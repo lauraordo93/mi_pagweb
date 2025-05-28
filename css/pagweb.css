@@ -1,0 +1,531 @@
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --color_blancoRoto: #f8f8f8;
+    --color_rosa: #4b002f;
+    --color_violetoscu: #2c003e;
+    --color_hover: #19ced1;
+    --color_azul: #0a192f;
+    ;
+    --color_verdemusgo: #1e2d24;
+    --color_verdeoliva_claro: #556B2F;
+
+
+}
+
+/*@include neo(3,1em,1em);*/
+
+/*PAra cuadrar el espacio*/
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: var(--color_blancoRoto);
+    color: black;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+header {
+    margin-top: 0;
+    text-align: center;
+}
+
+header#inicio {
+    height: auto;
+    /* ajusta a la altura que necesite */
+    min-height: 700px;
+}
+
+nav {
+    width: 100%;
+    padding: 1.2rem 0;
+    margin: 0;
+    position: relative;
+    z-index: 99;
+}
+
+/* Contenedor centrado */
+.nav-container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+/* Enlaces */
+.nav-container a {
+    display: inline-block;
+    margin: 1.5rem 1.5rem;
+    text-decoration: none;
+    color: #0b67b2;
+    font-weight: 600;
+    border: 2px solid #06406f;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    padding: 0.4rem 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+    /* white-space: nowrap; */
+}
+
+nav a {
+    padding: 10px 15px;
+    /* o el valor que mejor se adapte */
+    display: inline-block;
+    /* para que el padding afecte al área */
+}
+
+
+.nav-container a:hover {
+    background-color: #272b40;
+    color: white;
+}
+
+
+/*--- SOBREMI --- */
+
+.intro {
+    color: white;
+    padding: 2rem;
+    position: relative;
+    top: -65px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: justify;
+}
+
+/* Botón ver más */
+.vermas {
+    display: inline-block;
+    margin-top: 0.4rem;
+    color: #0b67b2;
+    font-weight: 600;
+    border: 2px solid #06406f;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    padding: 0.3rem 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+.vermas:hover {
+    background-color: #272b40;
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Media Query para móviles */
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 90%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .nav-container a {
+        white-space: normal;
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.6rem 0;
+    }
+}
+
+
+/*---ENTREVISTAS---*/
+
+
+.entrevista {
+
+    background-color: var(--color_blancoRoto);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 3rem;
+    border: 3px solid transparent;
+
+}
+
+.entrevista:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    animation: borderPulse 4s infinite alternate;
+}
+
+.entrevista h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.entrevista p {
+    font-size: 1rem;
+    text-align: justify;
+    color: #333;
+}
+
+.btn-entrevista {
+
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #0b67b2;
+    font-weight: 600;
+    border: 2px solid #06406f;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    padding: 0.4rem 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-entrevista:hover {
+    background-color: #272b40;
+    cursor: pointer;
+
+}
+
+.entrevista:hover {
+    cursor: pointer;
+}
+
+
+
+
+/*---TODAS LAS SECIONES---*/
+
+section {
+
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: var(--fondo-claro);
+    /* border-radius: 10px; */
+
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto 1rem auto;
+    padding: 1rem;
+    text-align: justify;
+}
+
+/*---Todas las etiquetas h2---*/
+
+h2 {
+    text-align: center;
+    /* font-family: monospace; */
+    font-size: 1.6rem;
+    color: #333;
+    position: relative;
+    margin: 2rem 0;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #880e4f;
+    margin: 0.5rem auto 0;
+}
+
+.intro h2 {
+    color: #bbcbd5;
+}
+
+
+/*---VIDEO---*/
+
+.video {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 3px solid transparent;
+    border-radius: 12px;
+    background-color: var(--color_blancoRoto);
+}
+
+
+
+.video-info {
+    /* font-size: x-large; */
+    padding: 3%;
+    margin: 1%;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.video:hover {
+    animation: borderPulse 4s infinite alternate;
+    /* background-color: #dfdaf1; */
+    cursor: pointer;
+}
+
+.video-frame {
+    flex: 1;
+    min-width: 300px;
+}
+
+.video-frame iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+
+
+/*---BIOGRAFIA---*/
+
+#biografia {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1.8rem 2.2rem;
+    background-color: var(--color_blancoRoto);
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(136, 14, 79, 0.12);
+    font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+
+
+
+
+}
+
+#biografia p {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: justify;
+    line-height: 1.75;
+    text-shadow: 0 0 2px rgba(200, 200, 200, 0.4);
+}
+
+#biografia:hover {
+    animation: borderPulse 4s infinite alternate;
+    border: 3px solid transparent;
+    /* background-color: #dfdaf1; */
+    cursor: pointer;
+}
+
+
+
+/*---GALERIA---*/
+
+.galeria {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 1rem;
+    list-style: none;
+    text-align: center;
+    /* para centrar imágenes inline-block */
+    background-color: var(--color_blancoRoto);
+}
+
+.galeria img {
+    display: inline-block;
+    width: 450px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+
+/*---AGENDA---*/
+#agenda {
+    border-radius: 1rem;
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding: 1.8rem 2.2rem;
+    background-color: var(--color_blancoRoto);
+
+}
+
+#agenda:hover {
+    animation: borderPulse 4s infinite alternate;
+    cursor: pointer;
+}
+
+.mensaje-agenda {
+
+
+
+    /* box-sizing: border-box; */
+    /* background-color: #fff; */
+    text-align: center;
+    color: #555;
+    font-style: italic;
+    /* padding: 2em; */
+}
+
+.mensaje-agenda p {
+    text-align: center;
+}
+
+.mensaje-agenda i {
+    font-size: 2rem;
+    color: #888;
+    margin-bottom: 0.5em;
+}
+
+
+
+/* Estilo general para la barra */
+progress.agenda {
+    width: 100%;
+    height: 25px;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #eee;
+    border: 2px solid #5b8dce;
+    box-shadow: 0 0 10px rgba(83, 72, 231, 0.3);
+    margin-top: 1rem;
+}
+
+
+
+/* Para navegadores WebKit como Chrome */
+progress.agenda::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 20px;
+}
+
+progress.agenda::-webkit-progress-value {
+    background: linear-gradient(90deg, #3498db, #3737b6);
+    border-radius: 20px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Para Firefox */
+progress.agenda::-moz-progress-bar {
+    background: linear-gradient(90deg, #3498db, #3737b6);
+    border-radius: 20px;
+}
+
+
+
+/* REDES SOCIALES */
+
+.redes-sociales {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    justify-content: center;
+    /* Centrar horizontalmente */
+}
+
+.redes-sociales a.icono {
+    font-size: 36px;
+    /* Tamaño más grande */
+    color: #1a1818;
+    /* Color gris neutro */
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.redes-sociales a.icono:hover {
+    color: #E4405F;
+    /* Color rosa Instagram o similar */
+    cursor: -moz-zoom-out;
+    /*mano de puntero*/
+}
+
+/* Opcional: colores específicos por red */
+.redes-sociales a.icono.instagram:hover {
+    color: #E4405F;
+
+    /* rosa Instagram */
+}
+
+.redes-sociales a.icono.youtube:hover {
+    color: #ce0c30;
+}
+
+.redes-sociales a.icono.facebook:hover {
+    color: #1877F2;
+    /* azul Facebook */
+}
+
+.redes-sociales a.icono.twitter:hover {
+    color: #1DA1F2;
+    /* azul Twitter */
+}
+
+.redes-sociales a.icono.envelope:hover {
+    color: #16b7d3;
+    /* rojo email */
+}
+
+/*--Footer--*/
+footer p {
+    font-family: 'Courier New', Courier, monospace;
+    /*Tipo de letra &copy;*/
+    color: #555;
+    text-align: center;
+}
+
+.pie a {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 1.5rem 1.5rem;
+    text-decoration: none;
+    color: #0b67b2;
+    font-weight: 600;
+    border: 2px solid #06406f;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    padding: 0.4rem 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pie a:hover {
+    background-color: #272b40;
+}
+
+@keyframes borderPulse {
+    0% {
+        border-color: #c5c7c9;
+        box-shadow: 0 0 5px #c5c7c9;
+    }
+
+    100% {
+        border-color: #0e0d0e;
+        box-shadow: 0 0 15px #0e0d0e;
+    }
+}
