@@ -23,6 +23,6 @@ El sitio está dividido en las siguientes secciones:
 
 ## 📌 Autor
 
-Proyecto realizado por **Laura** como parte de su formación en desarrollo de aplicaciones multiplataforma (DAM).
+Proyecto realizado por **Laura** como parte de mi formación en desarrollo de aplicaciones multiplataforma (DAM).
 
 ---
