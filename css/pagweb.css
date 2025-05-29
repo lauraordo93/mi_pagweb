@@ -9,22 +9,11 @@
     --color_rosa: #4b002f;
     --color_violetoscu: #2c003e;
     --color_hover: #19ced1;
-    --color_azul: #0a192f;
-    ;
-    --color_verdemusgo: #1e2d24;
-    --color_verdeoliva_claro: #556B2F;
+ 
 
 
 }
 
-/*@include neo(3,1em,1em);*/
-
-/*PAra cuadrar el espacio*/
-/* *,
-*::before,
-*::after {
-    box-sizing: border-box;
-} */
 
 body {
     background-color: var(--color_blancoRoto);
@@ -56,49 +45,6 @@ nav {
 }
 
 
-
-/* Contenedor centrado 
-.nav-container {
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-
-    flex-wrap: wrap;
-    padding: 0;
-}
-
-/* Enlaces 
-.nav-container a {
-    display: inline-block;
-    margin: 1.5rem 1.5rem;
-    text-decoration: none;
-    color: #0b67b2;
-    font-weight: 600;
-    border: 2px solid #06406f;
-    border-radius: 30px;
-    font-size: 0.9rem;
-    padding: 0.4rem 1.2rem;
-    transition: background-color 0.3s, color 0.3s;
-    /* white-space: nowrap; 
-}
-
-nav a {
-    padding: 10px 15px;
-    /* o el valor que mejor se adapte 
-    display: inline-block;
-    /* para que el padding afecte al área 
-}
-
-
-.nav-container a:hover {
-    background-color: #272b40;
-    color: white;
-}
-
-
-*/
 nav {
     width: 100%;
     color: white;
@@ -129,6 +75,7 @@ nav {
   justify-content: center;
   flex: 1; /* ocupa el máximo espacio posible */
 }
+
 /* Enlaces */
 .nav-container a {
     display: inline-block;
@@ -153,7 +100,6 @@ nav {
 }
 
 
-/* Separador con ::after, excepto en el último */
 .nav-container a {
 
     color: white;
@@ -170,10 +116,8 @@ nav {
 
 /* Hover en negro */
 .nav-container a:hover {
-    color: #f11010;
+    color: #0b67b2;
 }
-/* Foto pequeña a la derecha */
-/* Imagen */
 
 
 /* Responsive */
@@ -488,14 +432,10 @@ h2::after {
 
 .mensaje-agenda {
 
-
-
-    /* box-sizing: border-box; */
-    /* background-color: #fff; */
     text-align: center;
     color: #555;
     font-style: italic;
-    /* padding: 2em; */
+  
 }
 
 .mensaje-agenda p {
@@ -558,9 +498,7 @@ progress.agenda::-moz-progress-bar {
 
 .redes-sociales a.icono {
     font-size: 36px;
-    /* Tamaño más grande */
     color: #1a1818;
-    /* Color gris neutro */
     transition: color 0.3s ease;
     text-decoration: none;
 }
