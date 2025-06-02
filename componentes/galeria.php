@@ -1,7 +1,7 @@
 <?php
 include_once(__DIR__ . '/../config/db.php');
-
-$sql = "SELECT foto_url FROM entradas WHERE foto_url IS NOT NULL AND foto_url != '';";
+//SELECT foto_url FROM entradas WHERE foto_url IS NOT NULL AND foto_url != '';
+$sql = "SELECT * FROM `galeria`";
 $result = $conn->query($sql);
 
 if ($result && $result->num_rows > 0) {

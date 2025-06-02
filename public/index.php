@@ -18,21 +18,16 @@
     <header id="inicio">
 
         <nav class="nav-container">
-           
-                <?php include('../componentes/menunav.php'); ?>
-          
-            <!-- <a href="https://es.yamaha.com/es/artists/c/carlos_ordonez_de%20arce.html" class="foto-link">
-                <img src="../img/sax_sinfondo.jpg" alt="Artist by Yahama" />
-                <span class="titulo">Artist by Yahama yue</span>
-            </a> -->
-            <!-- <button class="menu-toggle" onclick="toggleMenu()">☰</button> -->
+
+            <?php include('../componentes/menunav.php'); ?>
         </nav>
 
         <div class="logo">
-            <?php include('../componentes/logo.php');
-            ; ?>
+            <?php include('../componentes/logo.php'); ?>
 
         </div>
+
+
         <div class="intro">
 
             <?php include('../componentes/sobremi.php'); ?>
@@ -61,6 +56,10 @@
         <?php include_once('../componentes/videos.php'); ?>
     </section>
 
+    <section id="academia">
+        <?php include('../componentes/academia.php'); ?>
+    </section>
+
     <section id="agenda">
         <div class="mensaje-agenda">
             <?php include_once('../componentes/agenda.php'); ?>
@@ -69,12 +68,31 @@
         </div>
     </section>
 
+
+<footer>
+    <?php include_once('../componentes/redes.php'); ?>
+    <div class="pie">
+        <p>
+            &copy; 2025 Todos los derechos reservados
+            | 
+            artist by
+            <a href="https://es.yamaha.com/es/artists/c/carlos_ordonez_de%20arce.html" target="_blank" rel="noopener noreferrer">
+                <img src="../img/logo_yamaha1.png" alt="Yamaha" style="height: 80px; margin-left: 5px; vertical-align: middle;">
+            </a>
+        </p>
+        <a href="#inicio">Volver al inicio</a>
+    </div>
+</footer>
+
+
+
+    <!-- 
     <footer>
         <?php include_once('../componentes/redes.php'); ?>
         <div class="pie">
             <p> &copy; 2025 Todos los derechos reservados <a href="#inicio">Volver al inicio</a></p>
         </div>
-    </footer>
+    </footer> -->
 
 </body>
 

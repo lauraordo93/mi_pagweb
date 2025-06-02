@@ -108,7 +108,7 @@
         <div class="galeria-contenedor">
             <div class="galeria">
                 <a href="../img/Carlos5.JPG" target="_blank">
-                    <img src="../img/Carlos5.JPG" alt="Carlos sax">
+                    <img src="../img/msa.jpg" alt="Carlos sax">
                 </a>
                 <a href="../img/Carlos6.JPG" target="_blank">
                     <img src="../img/Carlos6.JPG" alt="Carlos sax">

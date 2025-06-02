@@ -11,6 +11,7 @@ $ids_personalizados = [
     'Entrevistas' => 'entrevistas',
     'Galería' => 'galeria',
     'Videos' => 'videos',
+    'Academia' => 'academia',
     'Agenda' => 'agenda',
     'Redes Sociales' => 'redes'
 ];

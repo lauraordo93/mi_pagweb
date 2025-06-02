@@ -21,17 +21,17 @@ if ($result && $result->num_rows > 0) {
 }
 ?>
 
-<!-- Aquí ya puedes imprimir el estilo porque $logo_url está definido -->
+<!-- Aquí ya se puede imprimir el estilo porque $logo_url está definido -->
 <style>
     header#inicio {
         background-image: url('<?php echo $logo_url; ?>');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-         background-attachment: fixed;
-         /*quitando esto la imagen baja sola*/  
-        /* width: 100%;
-        min-height: 115vh; */
+        /*parallax (efecto de fondo fijo)*/
+        background-attachment: fixed;
+        width: 100%;
+        min-height: 115vh;
         justify-content: center;
     }
 
