@@ -583,7 +583,8 @@ progress.agenda::-moz-progress-bar {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     display: block;
     max-height: 550px;
-    /* limita la altura para que no se pase */
+    margin-right: 10%;
+   
 }
 
 .academia_class h3 {
