@@ -11,7 +11,7 @@ $ids_personalizados = [
     'Entrevistas' => 'entrevistas',
     'Galería' => 'galeria',
     'Videos' => 'videos',
-    'Academia' => 'academia',
+    'Madrid Sax Academy' => 'Madrid Sax Academy',/*Madrid Sax Academy*/ 
     'Agenda' => 'agenda',
     'Redes Sociales' => 'redes'
 ];

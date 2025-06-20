@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página web Carlos</title>
-    <!--Problemas con el link-->
     <link rel="stylesheet" href="../css/pagweb.css?v=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -69,31 +68,29 @@
     </section>
 
 
-<footer>
-    <?php include_once('../componentes/redes.php'); ?>
-    <div class="pie">
-        <p>
-            &copy; 2025 Todos los derechos reservados
-            | 
-            artist by
-            <a href="https://es.yamaha.com/es/artists/c/carlos_ordonez_de%20arce.html" target="_blank" rel="noopener noreferrer">
-                <img src="../img/logo_yamaha1.png" alt="Yamaha" style="height: 80px; margin-left: 5px; vertical-align: middle;">
-            </a>
-        </p>
-        <a href="#inicio">Volver al inicio</a>
-    </div>
-</footer>
 
-
-
-    <!-- 
     <footer>
         <?php include_once('../componentes/redes.php'); ?>
         <div class="pie">
-            <p> &copy; 2025 Todos los derechos reservados <a href="#inicio">Volver al inicio</a></p>
+            <p>
+                &copy; 2025 Todos los derechos reservados
+                |
+                <strong>Artist by</strong>
+                <a href="https://es.yamaha.com/es/artists/c/carlos_ordonez_de%20arce.html" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="../img/logo_yamaha1.png" alt="Yamaha"
+                        style="height: 80px; margin-left: 5px; vertical-align: middle;">
+                </a>
+            </p>
+            <a class="init" href="#inicio">Volver al inicio</a>
         </div>
-    </footer> -->
+    </footer>
 
+
+<!--Animación java script-->
+<!-- <script src="../js/animacion_galeria.js" defer></script> -->
+<script src="../js/animacion_academia.js" defer></script>
+<script src="../js/sobremi.js"></script>
 </body>
 
 </html>
